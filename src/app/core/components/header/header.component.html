@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+<header class="header">
+    <div class="header-top">
+        <div class="logo">
+            <span>TziTzimimeh</span>
+        </div>
+        <button class="nav-toggle" aria-label="Abrir menú" (click)="toggleNav()">
+            <i class="fas fa-bars fa-sm"></i>
+        </button>
+        <ul class="nav" [class.active]="navActive">
+            <li><a routerLink="/inicio.component" routerLinkActive="active">Inicio</a></li>
+            <li><a href="#">Características</a></li>
+            <li><a href="#">Precios</a></li>
+            <li><a href="#">Sobre nosotros</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </div>
+</header>

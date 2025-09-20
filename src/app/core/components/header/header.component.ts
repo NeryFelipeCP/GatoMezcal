@@ -8,5 +8,12 @@ import { RouterLink } from '@angular/router';
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css']
 })
-export class HeaderComponent {}
+
+export class HeaderComponent {
+  navActive = false;
+
+  toggleNav() {
+    this.navActive = !this.navActive;
+  }
+}
 

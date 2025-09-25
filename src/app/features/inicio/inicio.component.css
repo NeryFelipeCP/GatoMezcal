@@ -42,18 +42,20 @@ h4 {
 
 /* Hero Section */
 .hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1596461404969-9ae70f2830c1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');
   background-size: cover;
   background-position: center;
-  color: white;
+  color: black;
   text-align: center;
   padding: 6rem 2rem;
 }
 
 .hero h1 {
-  font-size: 3.5rem;
-  margin-bottom: 1rem;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-size: 2.5rem;
+  background: linear-gradient(135deg, #2e15ed 40%, #8d5ff6 60%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
 }
 
 .hero p {
@@ -65,8 +67,8 @@ h4 {
 
 .btn {
   display: inline-block;
-  background-color: var(--color-secondary);
-  color: var(--color-dark);
+  background-image: linear-gradient(135deg, #5e3af2 40%, #8d5ff6 60%);
+  color: white;
   padding: 1rem 2rem;
   border-radius: 30px;
   text-decoration: none;
@@ -76,7 +78,7 @@ h4 {
 }
 
 .btn:hover {
-  background-color: var(--color-accent);
+  background-image: linear-gradient(135deg, #5e3af2 20%, #8d5ff6 80%);
   color: white;
   transform: translateY(-3px);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
@@ -89,7 +91,12 @@ h4 {
 }
 
 .section-title {
-  font-size: 2.5rem;
+  background: linear-gradient(135deg, #2e15ed 30%, #8d5ff6 70%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  font-size: 2.0rem;
   position: relative;
   display: inline-block;
 }
@@ -108,7 +115,7 @@ h4 {
 .product-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2.5rem;
+  gap: 1rem;
 }
 
 .product-card {
@@ -164,16 +171,21 @@ h4 {
 /* Features Section */
 .features {
   background-color: var(--color-dark);
-  color: white;
-  padding: 5rem 0;
+  color: black;
+  padding: 4rem 0;
   text-align: center;
 }
 
 .features-grid {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
-  margin-top: 3rem;
+  margin-top: 1rem;
 }
 
 .feature-item {
@@ -270,12 +282,17 @@ h4 {
 /* CTA Section */
 .cta {
   background: linear-gradient(to right, var(--color-primary), var(--color-dark));
-  color: white;
+  color: black;
   text-align: center;
-  padding: 5rem 0;
+  padding: 4rem 0;
 }
 
 .cta h2 {
+  background: linear-gradient(135deg, #2e15ed 20%, #8d5ff6 80%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
   font-size: 2.5rem;
   margin-bottom: 1.5rem;
 }
